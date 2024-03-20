@@ -1,0 +1,65 @@
+VUE3的官方文档：https://cn.vuejs.org/
+
+# 简介
+渐进式框架：逐渐增强
+![alt text](image-2.png)
+
+# Vue API
+选项式API(Vue2)和组合式API(Vue3)
+## 选项式API（旧2）
+使用选项式API,我们可以用包含多个选项的对象来描述组件的逻辑，例如data、methods和mounted。选项所定义的属性都会暴露在函数内部的this上，它会指向当前的组件实例
+![alt text](image.png)
+
+## 组合式API（新3）
+![alt text](image-1.png)
+
+## 选那个
+![alt text](image-3.png)
+
+# Vue的准备
+1. 命令行 window+R =>cmd
+2. dir cls
+
+## 创建Vue项目
+新：cmd: npm init vue@latest
+
+旧：vue create <项目名称>
+
+![alt text](image-4.png)
+cmd:
+![alt text](image-6.png)
+
+![alt text](image-5.png)
+
+## 开发环境
+![alt text](image-7.png)
+
+## 目录结构  
+ ![alt text](image-8.png)
+
+# 模板语法  
+![alt text](image-9.png)
+ 
+![alt text](image-10.png)
+
+![alt text](image-11.png)
+message.split('').reverse().join('')
+1. message:字符串
+2. split：字符串分割为数组 [ "大", "家", "好" ]
+3. reverse ：字符串翻转；[ "好", "家", "大" ]
+4. join ：放入  好家大 
+   
+## 无效的
+![alt text](image-12.png)
+
+## 指令 v-html
+![alt text](image-13.png)
+
+之前的代码：
+ ![alt text](image-14.png)
+# 属性绑定
+1. 额外的笔记：script setup 
+   
+   setup 函数是组合式 API 的入口点，它提供了响应式状态（ref 和 reactive）以及生命周期钩子（如 onMounted 和 onUnmounted）等功能的访问。在 script setup 中，你可以直接使用这些功能，而无需通过 setup 函数显式地导出它们。
+ 
+ ![alt text](image-15.png)
