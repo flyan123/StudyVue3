@@ -1,12 +1,13 @@
 <template>
-<div>{{ msg }}</div>
+<div v-bind:id="idname" v-bind:class="msg">测试</div>
 </template>
 
 <script>
 export default{
     data(){
         return{
-            msg:"Hello World",
+            msg:"active",
+            idname:'123'
         }
     }
 }
