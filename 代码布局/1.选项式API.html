@@ -1,0 +1,27 @@
+<template>
+    <!-- 主要内容区：标签内容 -->
+    <!-- 方法:@click(点击) -->
+    <button @click="addnum">{{ num纯文本}}</button>
+    <!-- 插入html  intohtml是一个标签eg:intohtml:"<a href=""> title</a>"-->
+    <div v-html="intohtml"></div>
+</template>
+
+<script  setup>
+    // 写JS代码区
+    export default {
+            // data:用于定义组件的初始状态(可以通过插值表达式 {{ }} 或 v-bind 指令来访问这些数据)
+        data(){
+            return {
+                num:0,
+            }
+        },
+            //methods: 用于定义组件中的方法。(函数)
+        methods: {
+            addnum(){this.num++},
+        },
+        // mounted: 是Vue组件的一个生命周期钩子，用于在组件挂载到DOM后执行一些操作。
+        mounted() {
+            console.log()
+        },
+    }
+</script>

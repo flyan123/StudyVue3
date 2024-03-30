@@ -1,22 +1,18 @@
 <template>
-<button @click="onclick">数字：{{ num }}</button>
+<button @click="addnum"> 数子是{{ num }}</button>
 </template>
 
 <script>
   export default{
     data(){
       return {
-        num:0,
+        num:0
       }
     },
-    methods:{
-      onclick(){
+    methods: {
+      addnum(){
         this.num++
       }
     },
-    mounted(){
-      console.log('为',{num})
-    }
-
   }
 </script>
