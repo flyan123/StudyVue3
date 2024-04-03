@@ -5,10 +5,12 @@
 <script>
   export default{
     data(){
+      
       return {
         num:0
       }
     },
+
     methods: {
       addnum(){
         this.num++
