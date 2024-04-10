@@ -1,0 +1,46 @@
+<template>
+
+</template>
+
+<script>
+    export default {
+
+        //1. Vue选项 / 数据
+
+            data(){return{}},//数据对象
+            props:[],//父组件的数据
+            propsData:{},//
+            computed :{},//计算属性
+            methods:{},//函数方法
+            watch:{},  //侦听器==副作用
+
+         //2. Vue生命周期
+         created() {        }, //在实例创建完成后被立即同步调用,$el property 目前尚不可用。
+         mounted() {        }, //实例被挂载后调用，这时 el 被新创建的 vm.$el 替换了
+         updated() {        }, //在数据更改导致的虚拟 DOM 重新渲染和更新完毕之后被调用。
+         activated() {        }, //被 keep-alive 缓存的组件激活时调用。
+
+
+
+
+        render: function() {        },
+
+        components:{        },
+
+        globalData:{        },
+
+        onLaunch: function() {        },
+
+        onShow: function() {	},
+
+		onHide: function() {		},
+
+        onLoad(e){        },
+
+        onNavigationBarButtonTap(e){  },
+    }
+</script>
+
+<style>
+
+</style>

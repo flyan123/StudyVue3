@@ -22,6 +22,8 @@
 ### 配置方法
 https://www.jb51.net/javascript/3079575ee.htm
 
+this.$router.push()  
+
 ## views（页面）
 
 ## App.vue
