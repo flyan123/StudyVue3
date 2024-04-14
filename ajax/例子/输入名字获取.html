@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="shengfeng">
+        省份：<input class="shengfengs"/>
+    </div>
+    <div class="city">
+        城市：<input class="citys"/>
+    </div>
+    <button class="select">查询</button>
+    <div class="diqubox"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.querySelector('.select').addEventListener('click', ( )=>{
+            let pname = document.querySelector('.shengfengs').value
+            let cname = document.querySelector('.citys').value
+
+            axios({
+                url:"http://hmajax.itheima.net/api/area",
+                params:{
+                    pname,
+                    cname
+                }
+            }).then(result=>{
+                console.log(result.data.list)
+                let list = result.data.list
+                let thisli = list.map(areaName=>
+                `<li class=listgroup>
+                    ${areaName}
+                </li>`)
+                document.querySelector('.diqubox').innerHTML=thisli
+            })
+        })
+    </script>
+</body>
+</html>
