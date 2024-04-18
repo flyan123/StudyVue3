@@ -1,0 +1,15 @@
+教学视频：https://www.bilibili.com/video/BV1Xh411V7b5?p=14&spm_id_from=pageDriver&vd_source=e5bed4ffc0994783be2b4d923b94a0c5
+
+1.安装vit
+npm create vite
+2.安装环境
+npm i
+3.进入网页
+npm run dev
+
+安装商城
+Vue VSCode Snippets 插件
+
+项目安装eslint.cjs
+1: npm i eslint -D
+2: npx eslint --init
