@@ -7,7 +7,7 @@
     <button @click="change">改变</button>
   </div>
 
-  <!-- 下拉选择框：*** -->
+  <!-- 下拉选择框：https://www.runoob.com/vue3/vue3-v-for.html *** -->
   <div class="selectboc">
     <select @change="changeVal($event)" v-model="selOption">
       <template v-for="(site,index) in sites" :site="site" :index="index" :key="site.id">
@@ -19,6 +19,7 @@
       <div>您选中了:{{selOption}}</div>
   </div>
 
+<!-- 输入框： https://www.runoob.com/vue3/vue3-v-for.html ***-->
   <div>
     <hr/>
     <form @submit.prevent="addnewtodo">
