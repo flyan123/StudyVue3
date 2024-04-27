@@ -1,6 +1,6 @@
 # axios
 
-## 使用axios
+## 使用 axios API
 
 axios({
     url:'目标资源地址(协议/域名/端口：资源路径)',
