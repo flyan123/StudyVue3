@@ -19,6 +19,7 @@ git clone https://gitee.com/ge_minglin/gitskill.git
 git clone /kləʊn/ ' 仓库地址'：用于创建远程仓库的完整本地副本，
 git pull /pʊl/ ' 仓库地址'：用于在本地仓库已经存在的情况下，从远程仓库获取并合并最新的更改。
 
+
 ## 看
 git status /ˈsteɪtəs/ ：查看当前版本状态（是否修改）
 

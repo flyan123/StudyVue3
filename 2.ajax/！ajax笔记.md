@@ -33,7 +33,7 @@ axios({
   }  
 })  
 .then(function (response) {  
-  // 处理响应数据  
+  // 处理响应数据  服务器返回的数据，并进行进一步的处理。
   console.log(response.data);  
 })  
 .catch(function (error) {  
