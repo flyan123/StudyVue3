@@ -1,27 +1,3 @@
-# 指令
-https://v2.cn.vuejs.org/v2/guide/forms.html
-
-v-bind === ：：属性可动态绑定
-v-html ：解释为普通文本
-v-if：条件
-v-for：列表
-v-on === @ ：事件 /
-v-model ：双向绑定/表单
-
-v-text
-v-html.
-v-show
-v-if
-v-else
-v-else-if
-v-for
-v-on.
-v-bind.
-v-model.
-v-slot
-v-pre
-v-cloak
-v-once. 执行一次性地插值，当数据改变时，插值处的内容不会更新
 
 # 特殊 attribute
 key. :key="item.id"
